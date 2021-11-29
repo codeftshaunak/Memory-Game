@@ -22,14 +22,16 @@ h3 {
 }
 
 .grid {
-        width: 450px;
+        width: 430px;
         margin: auto;
         background-color: aliceblue;
+        padding-left: 5px;
 }
 
 img {
-        width: 50px;
+        width: 60px;
         height: 50px;
         padding: 0 2px;
         object-fit: cover;
+        cursor: pointer;
 }

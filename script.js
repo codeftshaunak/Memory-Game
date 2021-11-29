@@ -1,161 +1,132 @@
 document.addEventListener('DOMContentLoaded', () => {
         //card options
         const cardArray = [{
-                        name: 'tom',
-                        img: 'images/tom.png'
-                },
-                {
-                        name: 'angle',
-                        img: 'images/angle.png'
-                },
-                {
-                        name: 'anglelite',
-                        img: 'images/anglelite.png'
-                },
-                {
-                        name: 'batman',
-                        img: 'images/batman.png'
-                },
-                {
-                        name: 'boy',
-                        img: 'images/boy.png'
-                },
-                {
-                        name: 'doremon',
-                        img: 'images/doremon.png'
-                },
-                {
-                        name: 'jerry',
-                        img: 'images/jerry.png'
-                },
-                {
-                        name: 'monky',
-                        img: 'images/monky.png'
-                },
-                {
-                        name: 'panda',
-                        img: 'images/panda.png'
-                },
-                {
-                        name: 'picaho',
-                        img: 'images/picaho.png'
-                },
-                {
-                        name: 'tom',
-                        img: 'images/tom.png'
-                },
-                {
-                        name: 'angle',
-                        img: 'images/angle.png'
-                },
-                {
-                        name: 'anglelite',
-                        img: 'images/anglelite.png'
-                },
-                {
-                        name: 'batman',
-                        img: 'images/batman.png'
-                },
-                {
-                        name: 'boy',
-                        img: 'images/boy.png'
-                },
-                {
-                        name: 'doremon',
-                        img: 'images/doremon.png'
-                },
-                {
-                        name: 'jerry',
-                        img: 'images/jerry.png'
-                },
-                {
-                        name: 'monky',
-                        img: 'images/monky.png'
-                },
-                {
-                        name: 'panda',
-                        img: 'images/panda.png'
-                },
-                {
-                        name: 'picaho',
-                        img: 'images/picaho.png'
-                }, {
-                        name: 'tom',
-                        img: 'images/tom.png'
-                }, {
-                        name: 'angle',
-                        img: 'images/angle.png'
-                }, {
-                        name: 'anglelite',
-                        img: 'images/anglelite.png'
-                }, {
-                        name: 'batman',
-                        img: 'images/batman.png'
-                }, {
-                        name: 'boy',
-                        img: 'images/boy.png'
-                }, {
-                        name: 'doremon',
-                        img: 'images/doremon.png'
-                }, {
-                        name: 'jerry',
-                        img: 'images/jerry.png'
-                }, {
-                        name: 'monky',
-                        img: 'images/monky.png'
-                }, {
-                        name: 'panda',
-                        img: 'images/panda.png'
-                }, {
-                        name: 'picaho',
-                        img: 'images/picaho.png'
-                }, {
-                        name: 'tom',
-                        img: 'images/tom.png'
-                }, {
-                        name: 'angle',
-                        img: 'images/angle.png'
-                }, {
-                        name: 'anglelite',
-                        img: 'images/anglelite.png'
-                }, {
-                        name: 'batman',
-                        img: 'images/batman.png'
-                }, {
-                        name: 'boy',
-                        img: 'images/boy.png'
-                }, {
-                        name: 'doremon',
-                        img: 'images/doremon.png'
-                }, {
-                        name: 'jerry',
-                        img: 'images/jerry.png'
-                }, {
-                        name: 'monky',
-                        img: 'images/monky.png'
-                }, {
-                        name: 'panda',
-                        img: 'images/panda.png'
-                }, {
-                        name: 'picaho',
-                        img: 'images/picaho.png'
-                }, {
-                        name: 'jerry',
-                        img: 'images/jerry.png'
-                }, {
-                        name: 'monky',
-                        img: 'images/monky.png'
-                }, {
-                        name: 'panda',
-                        img: 'images/panda.png'
-                }, {
-                        name: 'picaho',
-                        img: 'images/picaho.png'
-                }, {
-                        name: 'picaho',
-                        img: 'images/picaho.png'
-                }
-        ];
+                name: 'tom',
+                img: 'images/tom.png'
+        }, {
+                name: 'angle',
+                img: 'images/angle.png'
+        }, {
+                name: 'anglelite',
+                img: 'images/anglelite.png'
+        }, {
+                name: 'batman',
+                img: 'images/batman.png'
+        }, {
+                name: 'boy',
+                img: 'images/boy.png'
+        }, {
+                name: 'doremon',
+                img: 'images/doremon.png'
+        }, {
+                name: 'jerry',
+                img: 'images/jerry.png'
+        }, {
+                name: 'monky',
+                img: 'images/monky.png'
+        }, {
+                name: 'panda',
+                img: 'images/panda.png'
+        }, {
+                name: 'picaho',
+                img: 'images/picaho.png'
+        }, {
+                name: 'tom',
+                img: 'images/tom.png'
+        }, {
+                name: 'angle',
+                img: 'images/angle.png'
+        }, {
+                name: 'anglelite',
+                img: 'images/anglelite.png'
+        }, {
+                name: 'batman',
+                img: 'images/batman.png'
+        }, {
+                name: 'boy',
+                img: 'images/boy.png'
+        }, {
+                name: 'doremon',
+                img: 'images/doremon.png'
+        }, {
+                name: 'jerry',
+                img: 'images/jerry.png'
+        }, {
+                name: 'monky',
+                img: 'images/monky.png'
+        }, {
+                name: 'panda',
+                img: 'images/panda.png'
+        }, {
+                name: 'picaho',
+                img: 'images/picaho.png'
+        }, {
+                name: 'tom',
+                img: 'images/tom.png'
+        }, {
+                name: 'angle',
+                img: 'images/angle.png'
+        }, {
+                name: 'anglelite',
+                img: 'images/anglelite.png'
+        }, {
+                name: 'batman',
+                img: 'images/batman.png'
+        }, {
+                name: 'boy',
+                img: 'images/boy.png'
+        }, {
+                name: 'doremon',
+                img: 'images/doremon.png'
+        }, {
+                name: 'jerry',
+                img: 'images/jerry.png'
+        }, {
+                name: 'monky',
+                img: 'images/monky.png'
+        }, {
+                name: 'panda',
+                img: 'images/panda.png'
+        }, {
+                name: 'picaho',
+                img: 'images/picaho.png'
+        }, {
+                name: 'tom',
+                img: 'images/tom.png'
+        }, {
+                name: 'angle',
+                img: 'images/angle.png'
+        }, {
+                name: 'anglelite',
+                img: 'images/anglelite.png'
+        }, {
+                name: 'batman',
+                img: 'images/batman.png'
+        }, {
+                name: 'boy',
+                img: 'images/boy.png'
+        }, {
+                name: 'doremon',
+                img: 'images/doremon.png'
+        }, {
+                name: 'jerry',
+                img: 'images/jerry.png'
+        }, {
+                name: 'monky',
+                img: 'images/monky.png'
+        }, {
+                name: 'panda',
+                img: 'images/panda.png'
+        }, {
+                name: 'picaho',
+                img: 'images/picaho.png'
+        }, {
+                name: 'picaho',
+                img: 'images/picaho.png'
+        }, {
+                name: 'picaho',
+                img: 'images/picaho.png'
+        }];
 
         cardArray.sort(() => 0.5 - Math.random());
 
