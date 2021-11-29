@@ -1,0 +1,35 @@
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Comforter Brush',
+                cursive
+}
+
+body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.433);
+}
+
+h3 {
+        font-size: 20px;
+        background-color: rgb(255, 248, 248);
+        padding: 3px;
+        margin-bottom: 10px;
+}
+
+.grid {
+        width: 450px;
+        margin: auto;
+        background-color: aliceblue;
+}
+
+img {
+        width: 50px;
+        height: 50px;
+        padding: 0 2px;
+        object-fit: cover;
+}
