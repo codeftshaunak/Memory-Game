@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         function createBoard() {
                 for (let i = 0; i < cardArray.length; i++) {
                         const card = document.createElement('img');
-                        card.setAttribute('src', 'images/blank.jpg');
+                        card.setAttribute('src', 'images/blank.gif');
                         card.setAttribute('data-id', i);
                         card.addEventListener('click', flipCard);
                         grid.appendChild(card);
@@ -155,8 +155,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const optionTwoId = cardsChosenId[1]
 
                 if (optionOneId == optionTwoId) {
-                        cardimage[optionOneId].setAttribute('src', 'images/blank.jpg')
-                        cardimage[optionTwoId].setAttribute('src', 'images/blank.jpg')
+                        cardimage[optionOneId].setAttribute('src', 'images/blank.gif')
+                        cardimage[optionTwoId].setAttribute('src', 'images/blank.gif')
                 } else if (cardsChosen[0] === cardsChosen[1]) {
                         cardimage[optionOneId].setAttribute('src', 'images/white.png')
                         cardimage[optionTwoId].setAttribute('src', 'images/white.png')
@@ -164,8 +164,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         cardimage[optionTwoId].removeEventListener('click', flipCard)
                         cardsWon.push(cardsChosen);
                 } else {
-                        cardimage[optionOneId].setAttribute('src', 'images/blank.jpg')
-                        cardimage[optionTwoId].setAttribute('src', 'images/blank.jpg')
+                        cardimage[optionOneId].setAttribute('src', 'images/blank.gif')
+                        cardimage[optionTwoId].setAttribute('src', 'images/blank.gif')
                         let count = 0;
                         count++;
                         if (count == 2) {
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 cardsChosenId.push(idCard);
                 this.setAttribute('src', cardArray[idCard].img);
                 if (cardsChosen.length === 2) {
-                        setTimeout(checkForMatch, 1000);
+                        setTimeout(checkForMatch, 500);
                 }
         }
 
